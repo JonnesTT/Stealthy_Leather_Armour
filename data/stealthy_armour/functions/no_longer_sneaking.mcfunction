@@ -1,4 +1,4 @@
-tell @a you're no longer sneaking :)
+#tell @a you're no longer sneaking :)
 
 scoreboard players operation #tmp_caster sa_player_id = @s sa_player_id
 tag @s add sa_0Tick_Marker
