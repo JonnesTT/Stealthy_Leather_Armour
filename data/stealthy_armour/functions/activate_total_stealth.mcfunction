@@ -4,7 +4,7 @@ tag @s add total_invisility
 
 summon armor_stand 0 1 0 {Invulnerable:1b,NoGravity:1b,Tags:[sa_StoresArmour,sa_0Tick_Marker]}
 #mark armourstand with owner
-scoreboard players operation tmp_caster sa_player_id = @s sa_player_id
+scoreboard players operation #tmp_caster sa_player_id = @s sa_player_id
 execute as @e[x=0,y=0,z=1,tag=sa_StoresArmour, tag=sa_0Tick_Marker,limit=1] run scoreboard players operation @s sa_player_id = #tmp_caster sa_player_id
 
 #give armourstand items
@@ -23,5 +23,4 @@ execute as @e[x=0,y=0,z=1,tag=sa_StoresArmour, tag=sa_0Tick_Marker] if score @s 
 
 scoreboard players set #tmp_caster sa_player_id 0
 
-
-effect give @s invisibility 1 1 true
+effect give @s invisibility 1 0 true
